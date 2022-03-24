@@ -14,20 +14,22 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-opacity-75 p-2 ">
-            <div class="container-fluid">
-              <a class="navbar-brand text-light fs-1 fonte_diferentona" href="#">Site 1</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active text-light fs-2 fonte_diferentona" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="index.html">Modal</a>
-                  <a class="nav-link text-light fs-2 fonte_diferentona" href="site2.html">Site 2</a>
+        <div >
+            <nav class="navbar navbar-expand-lg navbar-light p-2 menu">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-light fs-1 fonte-diferentona" href="#">Linktree</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-light fs-2 fonte-diferentona" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="index.html">Modal</a>
+                        <a class="nav-link text-light fs-2 fonte-diferentona" href="site2.html">Site 2</a>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </nav>
+            </nav>
+        </div>
 
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -48,11 +50,27 @@
             </div>
           </div>
     </header>
+
     <main>
-
+        <section class="corpo">
+            <div class="bg-img"></div>
+            <div class="linktree text-light">
+                <p class="fonte-diferentona fs-1 pt-5">Mateus Bittencourt</p>
+                <p class="fs-5 mb-4 mt-0">Entre em contato:</p>
+                <div class="lista pb-5">
+                    <p class="p-1">Linkedin: <a href="https://www.linkedin.com/in/mateus-bittencourt-0b10131a0/"><img src="imagens/linkedin.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">Gmail: <a href="bittenmat@gmail.com"><img src="imagens/gmail.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">GitHub: <a  href="https://github.com/MatBitt"><img src="imagens/github.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">Instagram: <a  href="https://www.instagram.com/mateus_bitt/"><img src="imagens/instagram.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">Facebook: <a  href="https://www.facebook.com/mateus.bittencourt.71"><img src="imagens/facebook.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">Goodreads: <a  href="https://www.goodreads.com/user/show/112915233-mateus-bittencourt"><img src="imagens/goodreads.png" class="img-fluid icones-footer"></a></p>
+                    <p class="p-1">Whatsapp: <img id="disney" src="imagens/whatsapp.png" class="img-fluid icones-footer"></p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
 
+    <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -60,6 +78,11 @@
         let botao = document.getElementById("troll");
         botao.addEventListener("click", function (){
             alert("nada aconteceu!");
+        });
+
+        let wpp = document.getElementById("disney");
+        wpp.addEventListener("click", function (){
+            alert("Ai ta na disney né");
         });
     </script>
 </body>
